@@ -285,7 +285,6 @@ autoScaling:
   horizontal:
     maxReplicas: 8
     averageCPU: 800m
-    averageMemory: 2Gi
     averageRelativeMemory: 50
 
 schedulerName: ""
