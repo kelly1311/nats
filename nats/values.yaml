@@ -278,15 +278,16 @@ resourceType: statefulset
 ## @param replicaCount Number of NATS nodes
 ##
 replicaCount: 3
-## @param schedulerName Use an alternate scheduler, e.g. "stork".
-## ref: https://kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/
-##
+
 autoScaling:
+  enable: true
   horizontal:
     maxReplicas: 8
     averageCPU: 800m
     averageRelativeMemory: 50
-
+## @param schedulerName Use an alternate scheduler, e.g. "stork".
+## ref: https://kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/
+##
 schedulerName: ""
 ## @param priorityClassName Name of pod priority class
 ## ref: https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/
