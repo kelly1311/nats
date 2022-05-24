@@ -280,11 +280,11 @@ resourceType: statefulset
 replicaCount: 3
 
 autoScaling:
-  enable: true
+  enable: false
   horizontal:
-    maxReplicas: 8
-    averageCPU: 800m
-    averageRelativeMemory: 50
+    maxReplicas: 
+    averageCPU: 
+    averageRelativeMemory: 
 ## @param schedulerName Use an alternate scheduler, e.g. "stork".
 ## ref: https://kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/
 ##
