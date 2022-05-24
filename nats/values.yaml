@@ -277,14 +277,15 @@ extraEnvVarsSecret: ""
 resourceType: statefulset
 ## @param replicaCount Number of NATS nodes
 ##
-replicaCount: 3
+replicaCount: 2
 
 autoScaling:
   enable: false
   horizontal:
-    maxReplicas: 
+    minReplicas: 2
+    maxReplicas: 5
     averageCPU: 
-    averageRelativeMemory: 
+    averageRelativeMemory: 80
 ## @param schedulerName Use an alternate scheduler, e.g. "stork".
 ## ref: https://kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/
 ##
