@@ -277,10 +277,10 @@ extraEnvVarsSecret: ""
 resourceType: statefulset
 ## @param replicaCount Number of NATS nodes
 ##
-replicaCount: 2
+#replicaCount: 2
 
 autoScaling:
-  enable: false
+  enable: true
   horizontal:
     minReplicas: 2
     maxReplicas: 5
