@@ -280,7 +280,7 @@ resourceType: statefulset
 replicaCount: 2
 
 autoScaling:
-  enable: true
+  enabled: true
   horizontal:
     minReplicas: 2
     maxReplicas: 5
