@@ -282,7 +282,7 @@ replicaCount: 2
 autoScaling:
   enabled: true
   horizontal:
-    minReplicas: 2
+    minReplicas: 3
     maxReplicas: 5
     averageCPU: 
     averageRelativeMemory: 50
